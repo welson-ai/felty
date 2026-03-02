@@ -67,6 +67,32 @@ Felty leverages the Stellar network for decentralized identity and rewards:
 - Contract: [Stellar Soroban Contract Address]
 - View Stellar integration at: https://stellar.expert/explorer/[contract-address]
 
+## Architecture
+
+### System Architecture
+See [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for detailed system architecture diagrams including:
+- High-level architecture overview
+- Authentication flow
+- Data flow architecture
+- Security architecture
+- Component architecture
+- Deployment architecture
+
+### Project Structure
+See [docs/PROJECT_STRUCTURE.md](./docs/PROJECT_STRUCTURE.md) for complete project structure including:
+- Directory organization
+- File naming conventions
+- Import patterns
+- Environment configuration
+
+### Smart Contracts
+The `/contracts` directory contains Stellar smart contracts for:
+- **Rewards Contract**: XLM reward distribution for achievements
+- **Achievements Contract**: On-chain achievement tracking and NFT badges
+- **Identity Contract**: Zero-knowledge proof system for anonymous posting
+
+See [contracts/README.md](./contracts/README.md) for smart contract documentation.
+
 ## Development
 
 ### Prerequisites
