@@ -43,7 +43,7 @@ Successfully migrated from Supabase to Neon PostgreSQL with custom JWT authentic
 
 The project is live at:
 
-https://scroll-souls1.vercel.app/
+https://felty-app.vercel.app/
 
 ## Stellar Network Integration
 
@@ -322,4 +322,4 @@ For support, please open an issue in the repository or contact the development t
 
 An emotional journal built on Stellar testnet
 
-scroll-souls1.vercel.app/
+felty-app.vercel.app/
