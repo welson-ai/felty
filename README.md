@@ -70,7 +70,7 @@ Felty leverages the Stellar network for decentralized identity and rewards:
 ## Architecture
 
 ### System Architecture
-See [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for detailed system architecture diagrams including:
+See [docs/SYSTEM_DIAGRAMS.md](./docs/SYSTEM_DIAGRAMS.md) for visual system architecture diagrams including:
 - High-level architecture overview
 - Authentication flow
 - Data flow architecture
@@ -79,11 +79,11 @@ See [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for detailed system architect
 - Deployment architecture
 
 ### Project Structure
-See [docs/PROJECT_STRUCTURE.md](./docs/PROJECT_STRUCTURE.md) for complete project structure including:
-- Directory organization
-- File naming conventions
-- Import patterns
-- Environment configuration
+See [docs/PROJECT_DIAGRAMS.md](./docs/PROJECT_DIAGRAMS.md) for visual project structure including:
+- Complete directory structure with icons
+- Data flow diagrams
+- Component hierarchy
+- Technology stack visualization
 
 ### Smart Contracts
 The `/contracts` directory contains Stellar smart contracts for:
