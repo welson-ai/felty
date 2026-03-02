@@ -5,11 +5,11 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-4 py-16 md:py-24">
-        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">About Scroll Souls</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">About Felty</h1>
         
         <div className="space-y-8 text-foreground/80 leading-relaxed">
           <p className="text-lg">
-            Scroll Souls is a comprehensive emotional wellness platform designed to support your mental health journey. We believe that everyone deserves access to tools and resources that help them understand, process, and improve their emotional well-being.
+            Felty is a comprehensive emotional wellness platform designed to support your mental health journey. We believe that everyone deserves access to tools and resources that help them understand, process, and improve their emotional well-being.
           </p>
 
           <section>
@@ -50,9 +50,9 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">Why Scroll Souls?</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Why Felty?</h2>
             <p>
-              We understand that mental health is personal. That's why we've built Scroll Souls as a judgment-free space where you can explore your emotions at your own pace. Whether you're looking to understand yourself better, track your mood trends, or connect with professional help, we're here to support you.
+              We understand that mental health is personal. That's why we've built Felty as a judgment-free space where you can explore your emotions at your own pace. Whether you're looking to understand yourself better, track your mood trends, or connect with professional help, we're here to support you.
             </p>
           </section>
 

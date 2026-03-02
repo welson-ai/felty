@@ -7,18 +7,18 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Scroll Souls - Emotional Wellness Platform',
-  description: 'Connect with your emotions, track your mood, journal privately, and find mental health support. Scroll Souls is your personal wellness companion.',
+  title: 'Felty - Emotional Wellness Platform',
+  description: 'Connect with your emotions, track your mood, journal privately, and find mental health support. Felty is your personal wellness companion.',
   keywords: 'mental health, emotional wellness, mood tracking, journaling, therapy, therapists, mental health support',
-  authors: [{ name: 'Scroll Souls Team' }],
-  creator: 'Scroll Souls',
+  authors: [{ name: 'Felty Team' }],
+  creator: 'Felty',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://scroll-souls.vercel.app',
-    title: 'Scroll Souls - Emotional Wellness Platform',
+    title: 'Felty - Emotional Wellness Platform',
     description: 'Your personal emotional wellness companion',
-    siteName: 'Scroll Souls',
+    siteName: 'Felty',
   },
   icons: {
     icon: [

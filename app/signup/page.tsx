@@ -67,8 +67,8 @@ export default function SignupPage() {
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader className="space-y-2">
           <div className="text-center mb-4">
-            <div className="text-4xl font-bold text-primary mb-2">🌊</div>
-            <CardTitle className="text-3xl">Join Scroll Souls</CardTitle>
+            <div className="text-4xl font-bold text-primary mb-2"></div>
+            <CardTitle className="text-3xl">Join Felty</CardTitle>
           </div>
           <CardDescription className="text-center">
             Start your emotional wellness journey today

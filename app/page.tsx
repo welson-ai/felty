@@ -6,7 +6,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-blue-50 via-background to-purple-50">
       {/* Navigation */}
       <nav className="flex items-center justify-between px-6 py-4 border-b border-border/50">
-        <div className="text-2xl font-bold text-primary">🌊 Scroll Souls</div>
+        <div className="text-2xl font-bold text-primary">Felty</div>
         <div className="flex gap-4">
           <Link href="/login">
             <Button variant="ghost">Sign In</Button>
@@ -23,7 +23,7 @@ export default function Home() {
           Your Emotional Wellness Journey
         </h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Track your emotions, journal your thoughts, and connect with mental health professionals. Scroll Souls is your companion for emotional wellbeing.
+          Track your emotions, journal your thoughts, and connect with mental health professionals. Felty is your companion for emotional wellbeing.
         </p>
         <div className="flex gap-4 justify-center">
           <Link href="/signup">
@@ -65,7 +65,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-border/50 mt-20 py-8 text-center text-muted-foreground">
-        <p>&copy; 2024 Scroll Souls. Your emotional wellness companion.</p>
+        <p>&copy; 2024 Felty. Your emotional wellness companion.</p>
       </footer>
     </main>
   );

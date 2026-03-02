@@ -55,7 +55,7 @@ export default function LoginPage() {
         <CardHeader className="space-y-2">
           <div className="text-center mb-4">
             <div className="text-4xl font-bold text-primary mb-2">🌊</div>
-            <CardTitle className="text-3xl">Scroll Souls</CardTitle>
+            <CardTitle className="text-3xl">Felty</CardTitle>
           </div>
           <CardDescription className="text-center">
             Your emotional wellness companion

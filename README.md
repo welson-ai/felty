@@ -102,96 +102,96 @@ Felty leverages the Stellar network for decentralized identity and rewards:
 
 ```
 felty/
-├── 📁 app/                          # Next.js App Router
-│   ├── 📁 api/                      # API Routes
-│   │   ├── 📁 auth/                 # Authentication
-│   │   ├── 📁 badges/               # Achievement system
-│   │   └── 📁 stats/                # Statistics
-│   ├── 📁 actions/                 # Server Actions
-│   ├── 📁 dashboard/               # Dashboard pages
-│   ├── 📁 journal/                 # Journal section
-│   ├── 📁 mood-wall/               # Global mood wall
-│   ├── 📁 organizations/           # Organizations
-│   ├── 📁 profile/                 # User profile
-│   ├── 📁 therapists/              # Therapists
-│   ├── 📁 about/                   # About page
-│   ├── 📁 login/                   # Login page
-│   └── 📁 signup/                  # Signup page
+├── app/                          # Next.js App Router
+│   ├── api/                      # API Routes
+│   │   ├── auth/                 # Authentication
+│   │   ├── badges/               # Achievement system
+│   │   └── stats/                # Statistics
+│   ├── actions/                 # Server Actions
+│   ├── dashboard/               # Dashboard pages
+│   ├── journal/                 # Journal section
+│   ├── mood-wall/               # Global mood wall
+│   ├── organizations/           # Organizations
+│   ├── profile/                 # User profile
+│   ├── therapists/              # Therapists
+│   ├── about/                   # About page
+│   ├── login/                   # Login page
+│   └── signup/                  # Signup page
 │
-├── 📁 components/                  # React Components
-│   ├── 📁 ui/                     # Base UI (shadcn/ui)
-│   ├── 📄 app-nav.tsx              # App navigation
-│   ├── 📄 check-in-modal.tsx       # Check-in modal
-│   └── 📄 mood-stats.tsx           # Mood statistics
+├── components/                  # React Components
+│   ├── ui/                     # Base UI (shadcn/ui)
+│   ├── app-nav.tsx              # App navigation
+│   ├── check-in-modal.tsx       # Check-in modal
+│   └── mood-stats.tsx           # Mood statistics
 │
-├── 📁 contracts/                  # Smart Contracts
-│   ├── 📁 stellar/                 # Stellar contracts
-│   │   ├── 📄 rewards.ts           # XLM rewards
-│   │   ├── 📄 achievements.ts      # Achievements
-│   │   └── 📄 identity.ts          # Identity/ZK
-│   └── 📁 deployment/          # Deployment scripts
+├── contracts/                  # Smart Contracts
+│   ├── stellar/                 # Stellar contracts
+│   │   ├── rewards.ts           # XLM rewards
+│   │   ├── achievements.ts      # Achievements
+│   │   └── identity.ts          # Identity/ZK
+│   └── deployment/          # Deployment scripts
 │
-├── 📁 docs/                       # Documentation
-├── 📁 hooks/                      # Custom Hooks
-├── 📁 lib/                        # Utility Libraries
-├── 📁 public/                     # Static Assets
-├── 📁 scripts/                    # Database Scripts
-├── 📁 styles/                     # Styles
-├── 🔧 .env                        # Environment variables
-├── 📦 package.json               # Dependencies
-└── 📖 README.md                  # Project documentation
+├── docs/                       # Documentation
+├── hooks/                      # Custom Hooks
+├── lib/                        # Utility Libraries
+├── public/                     # Static Assets
+├── scripts/                    # Database Scripts
+├── styles/                     # Styles
+├── .env                        # Environment variables
+├── package.json               # Dependencies
+└── README.md                  # Project documentation
 ```
 
 ### Data Flow
 
 ```
-🌐 USER INTERACTION
-        │
+USER INTERACTION
+        |
         ▼
 ┌─────────────────┐
 │   WEB APP      │
 │   (React)      │
-│ 📱 User Forms  │
-│ 🎨 UI Updates  │
-│ 🔄 State Mgmt  │
+│ User Forms     │
+│ UI Updates    │
+│ State Mgmt    │
 └─────────────────┘
-        │
+        |
         ▼
 ┌─────────────────┐
 │   NEXT.JS      │
 │   SERVER       │
-│ 🍪 Cookies     │
-│ 🔐 JWT Auth     │
-│ 🛡️ Middleware  │
+│ Cookies        │
+│ JWT Auth       │
+│ Middleware    │
 └─────────────────┘
-        │
+        |
         ▼
 ┌─────────────────┐
 │   API ROUTES    │
-│ ✅ Validation   │
-│ 💼 Business    │
+│ Validation    │
+│ Business      │
 │    Logic       │
-│ 📝 CRUD Ops     │
+│ CRUD Ops      │
 └─────────────────┘
-        │
+        |
         ▼
 ┌─────────────────┐
 │   DATABASE      │
 │   (Neon PG)    │
-│ 🗄️ Users        │
-│ 😊 Emotions     │
-│ 📔 Journals     │
-│ 🏢 Organizations│
+│ Users         │
+│ Emotions      │
+│ Journals      │
+│ Organizations│
 └─────────────────┘
-        │
+        |
         ▼
 ┌─────────────────┐
 │   STELLAR       │
 │   BLOCKCHAIN    │
-│ 💰 XLM Rewards  │
-│ 🔐 ZK Proofs    │
-│ ⛓️ Smart        │
-│    Contracts    │
+│ XLM Rewards   │
+│ ZK Proofs     │
+│ Smart         │
+│    Contracts   │
 └─────────────────┘
 ```
 

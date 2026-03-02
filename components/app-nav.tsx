@@ -34,7 +34,7 @@ export function AppNav() {
       {/* Desktop Navigation */}
       <nav className="hidden md:flex fixed left-0 top-0 h-screen w-64 bg-card border-r border-border flex-col">
         <div className="p-6 border-b border-border">
-          <div className="text-2xl font-bold text-primary">🌊 Scroll Souls</div>
+          <div className="text-2xl font-bold text-primary">Felty</div>
         </div>
 
         <div className="flex-1 overflow-y-auto p-4 space-y-2">
