@@ -3,73 +3,77 @@ import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300">
-      {/* Navigation */}
-      <nav className="flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md border-b border-purple-200/50">
-        <div className="text-2xl font-bold text-purple-900">Felty</div>
-        <div className="flex gap-4">
-          <Link href="/login">
-            <Button variant="ghost" className="text-purple-700 hover:bg-purple-100">Sign In</Button>
-          </Link>
-          <Link href="/signup">
-            <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">Get Started</Button>
-          </Link>
-        </div>
-      </nav>
+    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      {/* Hero Section with Light Purple Theme */}
+      <section className="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300 text-center relative">
+        {/* Navigation at Bottom */}
+        <nav className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-purple-200/50 px-6 py-4 z-50">
+          <div className="flex items-center justify-between max-w-6xl mx-auto">
+            <div className="text-xl font-bold text-purple-900">Felty</div>
+            <div className="flex gap-4">
+              <Link href="/login">
+                <Button variant="ghost" className="text-purple-700 hover:bg-purple-100">Sign In</Button>
+              </Link>
+              <Link href="/signup">
+                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">Get Started</Button>
+              </Link>
+            </div>
+          </div>
+        </nav>
 
-      {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 py-12 text-center relative">
-        <div className="mb-6">
-          <span className="inline-block px-4 py-2 bg-purple-500/20 text-purple-700 rounded-full text-sm font-semibold">
-            Emotional Wellness Platform
-          </span>
-        </div>
-        <p className="text-xl text-purple-800 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Track your emotions, journal your thoughts, and connect with mental health professionals. 
-          Felty is your AI-powered companion for emotional wellbeing and personal growth.
-        </p>
-        
-        {/* Hero Image */}
-        <div className="relative w-full h-[60vh] min-h-[400px] max-h-[600px]">
-          <div className="absolute inset-0 bg-gradient-to-t from-purple-200/30 via-purple-300/20 to-transparent z-10"></div>
-          <img 
-            src="/hero image.png"
-            alt="Emotional wellness and mental health support"
-            className="w-full h-full object-cover rounded-2xl shadow-2xl"
-          />
-          <div className="absolute bottom-0 left-0 right-0 p-8 z-20">
-            <div className="text-white text-center">
-              <p className="text-lg font-medium mb-2">Join thousands on their wellness journey</p>
-              <div className="flex items-center justify-center gap-8 text-sm">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span>50K+ Active Users</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                  <span>500+ Therapists</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
-                  <span>98% Satisfaction</span>
+        <div className="max-w-6xl mx-auto px-6 py-12">
+          <div className="mb-6">
+            <span className="inline-block px-3 py-1 bg-purple-500/20 text-purple-700 rounded-full text-xs font-semibold">
+              Emotional Wellness Platform
+            </span>
+          </div>
+          <p className="text-lg text-purple-800 mb-6 max-w-3xl mx-auto leading-relaxed">
+            Track your emotions, journal your thoughts, and connect with mental health professionals. 
+            Felty is your AI-powered companion for emotional wellbeing and personal growth.
+          </p>
+          
+          {/* Hero Image */}
+          <div className="relative w-full h-[50vh] min-h-[350px] max-h-[500px] mb-8">
+            <div className="absolute inset-0 bg-gradient-to-t from-purple-200/40 via-purple-300/30 to-transparent z-10"></div>
+            <img 
+              src="/hero image.png"
+              alt="Emotional wellness and mental health support"
+              className="w-full h-full object-cover rounded-2xl shadow-2xl"
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+              <div className="text-purple-900 text-center">
+                <p className="text-sm font-medium mb-2">Join thousands on their wellness journey</p>
+                <div className="flex items-center justify-center gap-6 text-xs">
+                  <div className="flex items-center gap-1">
+                    <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
+                    <span>50K+ Active Users</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse"></div>
+                    <span>500+ Therapists</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full animate-pulse"></div>
+                    <span>98% Satisfaction</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        
-        {/* CTA Buttons */}
-        <div className="flex gap-4 justify-center mt-12">
-          <Link href="/signup">
-            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 text-lg">
-              Start Free Today
-            </Button>
-          </Link>
-          <Link href="/login">
-            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg">
-              Sign In
-            </Button>
-          </Link>
+          
+          {/* CTA Buttons */}
+          <div className="flex gap-3 justify-center mb-20">
+            <Link href="/signup">
+              <Button size="sm" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2">
+                Start Free Today
+              </Button>
+            </Link>
+            <Link href="/login">
+              <Button size="sm" variant="outline" className="border-purple-300 text-purple-700 hover:bg-purple-100 px-6 py-2">
+                Sign In
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
