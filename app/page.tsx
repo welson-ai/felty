@@ -18,7 +18,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 py-20 text-center">
+      <section className="max-w-6xl mx-auto px-6 py-20 text-center relative">
         <div className="mb-8">
           <span className="inline-block px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-semibold mb-4">
             Emotional Wellness Platform
@@ -34,7 +34,7 @@ export default function Home() {
           Track your emotions, journal your thoughts, and connect with mental health professionals. 
           Felty is your AI-powered companion for emotional wellbeing and personal growth.
         </p>
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 justify-center mb-16">
           <Link href="/signup">
             <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 text-lg">
               Start Free Today
@@ -45,6 +45,35 @@ export default function Home() {
               Sign In
             </Button>
           </Link>
+        </div>
+        
+        {/* Hero Image */}
+        <div className="relative w-full h-[60vh] min-h-[400px] max-h-[600px]">
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1541480601022-2308c0f02487?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Emotional wellness and mental health support"
+            className="w-full h-full object-cover rounded-2xl shadow-2xl"
+          />
+          <div className="absolute bottom-0 left-0 right-0 p-8 z-20">
+            <div className="text-white text-center">
+              <p className="text-lg font-medium mb-2">Join thousands on their wellness journey</p>
+              <div className="flex items-center justify-center gap-8 text-sm">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  <span>50K+ Active Users</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                  <span>500+ Therapists</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
+                  <span>98% Satisfaction</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
