@@ -1,0 +1,30 @@
+# ASCII Art Test
+
+## Simple Box Test
+
+```
+┌─────────┐
+│  HELLO  │
+│  WORLD  │
+└─────────┘
+```
+
+## Complex Box Test
+
+```
+┌─────────────────────────────────┐
+│         FELTY APP            │
+├─────────────────────────────────┤
+│ ┌─────┐ ┌─────┐ ┌─────┐    │
+│ │ WEB │ │ API │ │ DB  │    │
+│ └─────┘ └─────┘ └─────┘    │
+└─────────────────────────────────┘
+```
+
+## Arrow Test
+
+```
+USER ──► FRONTEND ──► API ──► DATABASE
+```
+
+If you can see these boxes and arrows, then ASCII art is working!
