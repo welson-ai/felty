@@ -70,20 +70,130 @@ Felty leverages the Stellar network for decentralized identity and rewards:
 ## Architecture
 
 ### System Architecture
-See [docs/SYSTEM_DIAGRAMS.md](./docs/SYSTEM_DIAGRAMS.md) for visual system architecture diagrams including:
-- High-level architecture overview
-- Authentication flow
-- Data flow architecture
-- Security architecture
-- Component architecture
-- Deployment architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                           FELTY EMOTIONAL WELLNESS PLATFORM                     │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐   │
+│  │   WEB APP   │◄──►│  NEXT.JS    │◄──►│   API       │◄──►│  NEON DB    │   │
+│  │             │    │   SERVER    │    │  ROUTES     │    │  POSTGRESQL  │   │
+│  │ - React     │    │ - Auth      │    │ - JWT       │    │ - Users      │   │
+│  │ - TypeScript│    │ - Sessions  │    │ - Validation│    │ - Emotions  │   │
+│  │ - Tailwind  │    │ - Cookies   │    │ - Business  │    │ - Journals  │   │
+│  │ - State Mgmt│    │ - Middleware│    │   Logic     │    │ - Orgs      │   │
+│  └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘   │
+│         │                   │                   │                   │           │
+│         ▼                   ▼                   ▼                   ▼           │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐   │
+│  │   BROWSER   │    │   VERCEL    │    │   STELLAR   │    │   ANALYTICS │   │
+│  │   CLIENT    │    │  DEPLOYMENT │    │  BLOCKCHAIN │    │  MONITORING │   │
+│  │ - Cookies   │    │ - Edge Net  │    │ - XLM       │    │ - Metrics   │   │
+│  │ - Local     │    │ - CDN       │    │ - ZK Proofs │    │ - Logs      │   │
+│  │   Storage   │    │ - Serverless│    │ - Smart     │    │ - Alerts    │   │
+│  │ - Session   │    │ - Global    │    │   Contracts │    │ - Health    │   │
+│  │   Mgmt      │    │   Reach     │    │ - Rewards   │    │   Checks    │   │
+│  └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘   │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ### Project Structure
-See [docs/PROJECT_DIAGRAMS.md](./docs/PROJECT_DIAGRAMS.md) for visual project structure including:
-- Complete directory structure with icons
-- Data flow diagrams
-- Component hierarchy
-- Technology stack visualization
+
+```
+felty/
+├── 📁 app/                          # Next.js App Router
+│   ├── 📁 api/                      # API Routes
+│   │   ├── 📁 auth/                 # Authentication
+│   │   ├── 📁 badges/               # Achievement system
+│   │   └── 📁 stats/                # Statistics
+│   ├── 📁 actions/                 # Server Actions
+│   ├── 📁 dashboard/               # Dashboard pages
+│   ├── 📁 journal/                 # Journal section
+│   ├── 📁 mood-wall/               # Global mood wall
+│   ├── 📁 organizations/           # Organizations
+│   ├── 📁 profile/                 # User profile
+│   ├── 📁 therapists/              # Therapists
+│   ├── 📁 about/                   # About page
+│   ├── 📁 login/                   # Login page
+│   └── 📁 signup/                  # Signup page
+│
+├── 📁 components/                  # React Components
+│   ├── 📁 ui/                     # Base UI (shadcn/ui)
+│   ├── 📄 app-nav.tsx              # App navigation
+│   ├── 📄 check-in-modal.tsx       # Check-in modal
+│   └── 📄 mood-stats.tsx           # Mood statistics
+│
+├── 📁 contracts/                  # Smart Contracts
+│   ├── 📁 stellar/                 # Stellar contracts
+│   │   ├── 📄 rewards.ts           # XLM rewards
+│   │   ├── 📄 achievements.ts      # Achievements
+│   │   └── 📄 identity.ts          # Identity/ZK
+│   └── 📁 deployment/          # Deployment scripts
+│
+├── 📁 docs/                       # Documentation
+├── 📁 hooks/                      # Custom Hooks
+├── 📁 lib/                        # Utility Libraries
+├── 📁 public/                     # Static Assets
+├── 📁 scripts/                    # Database Scripts
+├── 📁 styles/                     # Styles
+├── 🔧 .env                        # Environment variables
+├── 📦 package.json               # Dependencies
+└── 📖 README.md                  # Project documentation
+```
+
+### Data Flow
+
+```
+🌐 USER INTERACTION
+        │
+        ▼
+┌─────────────────┐
+│   WEB APP      │
+│   (React)      │
+│ 📱 User Forms  │
+│ 🎨 UI Updates  │
+│ 🔄 State Mgmt  │
+└─────────────────┘
+        │
+        ▼
+┌─────────────────┐
+│   NEXT.JS      │
+│   SERVER       │
+│ 🍪 Cookies     │
+│ 🔐 JWT Auth     │
+│ 🛡️ Middleware  │
+└─────────────────┘
+        │
+        ▼
+┌─────────────────┐
+│   API ROUTES    │
+│ ✅ Validation   │
+│ 💼 Business    │
+│    Logic       │
+│ 📝 CRUD Ops     │
+└─────────────────┘
+        │
+        ▼
+┌─────────────────┐
+│   DATABASE      │
+│   (Neon PG)    │
+│ 🗄️ Users        │
+│ 😊 Emotions     │
+│ 📔 Journals     │
+│ 🏢 Organizations│
+└─────────────────┘
+        │
+        ▼
+┌─────────────────┐
+│   STELLAR       │
+│   BLOCKCHAIN    │
+│ 💰 XLM Rewards  │
+│ 🔐 ZK Proofs    │
+│ ⛓️ Smart        │
+│    Contracts    │
+└─────────────────┘
+```
 
 ### Smart Contracts
 The `/contracts` directory contains Stellar smart contracts for:
