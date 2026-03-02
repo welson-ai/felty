@@ -3,13 +3,13 @@ import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <main className="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300">
       {/* Navigation */}
-      <nav className="flex items-center justify-between px-6 py-4 bg-black/20 backdrop-blur-md border-b border-white/10">
-        <div className="text-2xl font-bold text-white">Felty</div>
+      <nav className="flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md border-b border-purple-200/50">
+        <div className="text-2xl font-bold text-purple-900">Felty</div>
         <div className="flex gap-4">
           <Link href="/login">
-            <Button variant="ghost" className="text-white hover:bg-white/10">Sign In</Button>
+            <Button variant="ghost" className="text-purple-700 hover:bg-purple-100">Sign In</Button>
           </Link>
           <Link href="/signup">
             <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">Get Started</Button>
@@ -20,30 +20,18 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-6 py-12 text-center relative">
         <div className="mb-6">
-          <span className="inline-block px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-semibold">
+          <span className="inline-block px-4 py-2 bg-purple-500/20 text-purple-700 rounded-full text-sm font-semibold">
             Emotional Wellness Platform
           </span>
         </div>
-        <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl text-purple-800 mb-8 max-w-3xl mx-auto leading-relaxed">
           Track your emotions, journal your thoughts, and connect with mental health professionals. 
           Felty is your AI-powered companion for emotional wellbeing and personal growth.
         </p>
-        <div className="flex gap-4 justify-center mb-12">
-          <Link href="/signup">
-            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 text-lg">
-              Start Free Today
-            </Button>
-          </Link>
-          <Link href="/login">
-            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg">
-              Sign In
-            </Button>
-          </Link>
-        </div>
         
         {/* Hero Image */}
         <div className="relative w-full h-[60vh] min-h-[400px] max-h-[600px]">
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-purple-200/30 via-purple-300/20 to-transparent z-10"></div>
           <img 
             src="/hero image.png"
             alt="Emotional wellness and mental health support"
@@ -68,6 +56,20 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        
+        {/* CTA Buttons */}
+        <div className="flex gap-4 justify-center mt-12">
+          <Link href="/signup">
+            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 text-lg">
+              Start Free Today
+            </Button>
+          </Link>
+          <Link href="/login">
+            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg">
+              Sign In
+            </Button>
+          </Link>
         </div>
       </section>
 
