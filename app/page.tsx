@@ -18,23 +18,17 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 py-20 text-center relative">
-        <div className="mb-8">
-          <span className="inline-block px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-semibold mb-4">
+      <section className="max-w-6xl mx-auto px-6 py-12 text-center relative">
+        <div className="mb-6">
+          <span className="inline-block px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-semibold">
             Emotional Wellness Platform
           </span>
         </div>
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Transform Your
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-            Emotional Health
-          </span>
-        </h1>
         <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
           Track your emotions, journal your thoughts, and connect with mental health professionals. 
           Felty is your AI-powered companion for emotional wellbeing and personal growth.
         </p>
-        <div className="flex gap-4 justify-center mb-16">
+        <div className="flex gap-4 justify-center mb-12">
           <Link href="/signup">
             <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 text-lg">
               Start Free Today
